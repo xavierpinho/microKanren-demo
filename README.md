@@ -13,7 +13,7 @@ and try a few examples:
 	*MicroKanren> run' [0] $ exists (\x -> membero x (list [sym "X", sym "Y"]))
 	[[(0,X)],[(0,Y)]]
 	
-	*MicroKanren> run' [0,1] $ exists2 (\ run' [0,1] $ exists2 (\x y -> appendo x y (list [sym "X", sym "Y"]))
+	*MicroKanren> run' [0,1] $ exists2 (\x y -> appendo x y (list [sym "X", sym "Y"]))
 	[[(0,Nil),(1,Cons[X,Cons[Y,Nil]])],[(0,Cons[X,Nil]),(1,Cons[Y,Nil])],[(0,Cons[X,Cons[Y,Nil]]),(1,Nil)]]
 	
 	
